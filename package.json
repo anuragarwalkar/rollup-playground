@@ -1,0 +1,33 @@
+{
+  "name": "my-library",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/my-lib.cjs.js",
+  "module": "dist/my-lib.esm.js",
+  "browser": "dist/my-lib.umd.js",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "test": "node test/spec",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "^4.17.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}
